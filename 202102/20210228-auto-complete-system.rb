@@ -31,8 +31,6 @@ class AutocompleteSystem
   def input(ch)
     @sentence += ch
 
-    return [] if @curr.nil?
-
     if ch == '#'
       self.insert(@sentence, 1)
       @sentence = ''
@@ -75,6 +73,10 @@ class AutocompleteSystem
 end
 
 a = AutocompleteSystem.new(["i love a#", "i love b#", "i love c#", "i love d#"], [5,5,5,5]);
+p a.input('i')
+p a.input(' ')
+p a.input('a')
+p a.input('#')
 p a.input('i')
 p a.input(' ')
 p a.input('a')
