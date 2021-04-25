@@ -1,6 +1,5 @@
 from sortedcontainers import SortedList
 
-
 class Solution(object):
   def reversePairs(self, nums):
     rank = SortedList([])
