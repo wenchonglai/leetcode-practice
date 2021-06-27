@@ -24,3 +24,8 @@ class Solution:
       stack.append(val)
 
     return res
+
+
+ 24  
+6  8  
+  2 4
