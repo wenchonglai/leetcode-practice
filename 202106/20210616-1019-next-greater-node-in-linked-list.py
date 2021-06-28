@@ -3,6 +3,7 @@
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+
 class Solution:
   def nextLargerNodes(self, head: ListNode) -> List[int]:
     res = []
@@ -24,8 +25,3 @@ class Solution:
       stack.append(val)
 
     return res
-
-
- 24  
-6  8  
-  2 4
